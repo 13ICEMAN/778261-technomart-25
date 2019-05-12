@@ -10,9 +10,16 @@
         <img src="img/index-logo.svg" width="200" height="30" alt="Логотип Интернет-магазина «Техномарт»">
       </a>
       <div>
-        <a class="button" href="#">Поиск</a>
-        <a class="button" href="#">Закладки</a>
-        <a class="button" href="#">Корзина</a>
+        <div class="search">
+          <input type="submit" value="Поиск">
+          <!--Здесь будет форма-->
+        </div>
+        <div class="wishlist">
+          <a href="#">Закладки</a>
+        </div>
+        <div class="basket">
+          <a href="#">Корзина</a>
+        </div>
         <a class="button" href="#">Оформить заказ</a>
       </div>
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
@@ -24,8 +31,8 @@
         <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
       </div>
       <div>
-        Равшан Джамшутович
-        <ul class="user-navigation">
+        <span>Равшан Джамшутович</span>        
+        <ul class="personal-navigation">
           <li>
             <a href="#">Мои Заказы</a>
           </li>
@@ -256,11 +263,7 @@
       <a class="main-footer-logo" href="index.html">
         <img src="img/index-logo.svg" width="250" height="40" alt="Логотип Интернет-магазина «Техномарт»">
       </a>
-      <p class="footer-contacts">
-        г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8<br>
-        +7 (812) 555-05-55
-      </p>
-      <div class="footer-navigation">
+      <div class="footer-navigation-one">
         <ul class="site-navigation">
           <li>
             <a href="#">Компания</a>
@@ -277,6 +280,14 @@
           <li>
             <a href="#">Контакты</a>
           </li>
+        </ul>
+      </div>
+      <p class="footer-contacts">
+        г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8<br>
+        +7 (812) 555-05-55
+      </p>
+      <div class="footer-navigation-two">
+        <ul class="site-navigation">
           <li>
             <a href="#">Материалы</a>
           </li>
