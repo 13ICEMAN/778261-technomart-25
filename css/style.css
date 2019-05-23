@@ -2,10 +2,10 @@ body {
   margin: 0;
   padding: 0;
   
-  font-family: "PT Sans", Arial, sens-serif;
+  font-family:"Cuprum", "PT Sans", Arial, sens-serif;
   font-size: 13px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: normal;
   color: #000000;
   
   background-color: #ffffff;
@@ -24,24 +24,143 @@ a {
   background-color: #293449;
 }
 
+.make-order-button {
+  background-color: #63a63e;
+}
+
+.make-order-button:hover,
+.make-order-button:focus {
+  background-color: #5fbb2d;
+}
+
 .header-middle {
   background-color: #f4f7f9;
+}
+
+.site-title {
+  width:196px;
+  height:60px;
+  font-family: Cuprum;
+  font-style: Italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.phone-number {
+  font-family: Cuprum;
+  font-size: 21px;
+  line-height: 1;
+  color: #ee3643;
+}
+
+.adress {
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.login-link {
+  font-family: Cuprum;
+  font-size: 21px;
+  line-height: 1;
+  color: #000000;
 }
 
 .main-navigation {
   font-family: Cuprum;
   font-size: 17px;
-  line-height: 17px;
+  line-height: 1;
   color: #ffffff;
   
   background-color: #32425c;
 }
 
 .user-navigation,
-.main-navigation-list {
+.main-navigation-list,
+.user-list,
+.catalog-list,
+.brands-list,
+.footer-top-navigation {
   list-style: none;
 }
 
-.main-navigation-list a {
+.main-navigation-list a,
+.header-top a {
   color: #ffffff;
+}
+
+.main-navigation-list a:hover,
+.main-navigation-list a:focus {
+  background-color: #293449;
+}
+
+.headline {
+  font-family: Cuprum;
+  font-size: 30px;
+  text-align: left;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.catalog-item {
+  text-align: center;
+  font-weight: bold;
+}
+
+.catalog-item-title {
+  width:155px;
+  height:33px;
+  font-family: PT Sans;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.catalog-item-price-old {
+  font-family: PT Sans;
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: line-through;
+  color: #a9a9a9;
+}
+
+.catalog-item-price-current {
+  
+}             
+  
+.main-button {
+  text-align: center;
+  vertical-align: middle;
+  font-family: Cuprum;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: none;
+  color:#ffffff;
+  
+  background-color: #ee3643;
+}
+
+.main-button:hover,
+.main-button:focus {
+  background-color: #ca2c37;
+}
+
+.footer-top {
+ font-family: Cuprum;
+ font-size: 18px;
+ line-height: 24px;
+ color: #f1f5f7;
+  
+ background-color: #32425c; 
+}
+
+.footer-top-navigation a {
+  color: #f1f5f7;
+}
+
+.footer-top-navigation a:hover,
+.footer-top-navigation a:focus {
+  text-decoration: underline;
 }
