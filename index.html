@@ -94,17 +94,17 @@
     <main class="container">
 
       <div class="overall-catalog">
-        <div>
+        <div class="materials">
           <span class="overall-catalog-title">Материалы</span>
           <a class="overall-catalog-button" href="#">На любой вкус</a>
           <img src="img/icon-materials.svg" width="44" height="65" alt="Материалы">
         </div>
-        <div>
+        <div class="instrument">
           <span class="overall-catalog-title">Инструмент</span>
           <a class="overall-catalog-button" href="#">На все случаи</a>
           <img src="img/icon-instrument.svg" width="75" height="61" alt="Инструмент">
         </div>
-        <div>
+        <div class="technic">
           <span class="overall-catalog-title">Техника</span>
           <a class="overall-catalog-button" href="#">Для стройки</a>
           <img src="img/icon-technic.svg" width="78" height="62" alt="Техника">
@@ -112,12 +112,12 @@
 
       <!--Здесь будет слайдер-->
 
-        <div>
+        <div class="discounts">
           <span class="overall-catalog-title">Скидки 50%</span>
           <a class="overall-catalog-button" href="#">На 350 товаров</a>
           <img src="img/icon-discounts.svg" width="59" height="72" alt="Скидки 50%">
         </div>
-        <div>
+        <div class="delivery">
           <span class="overall-catalog-title">Доставка</span>
           <a class="overall-catalog-button" href="#">Бесплатно</a>
           <img src="img/icon-delivery.svg" width="78" height="63" alt="Доставка">
@@ -125,8 +125,10 @@
       </div>
 
       <section class="catalog">
-        <h2 class="headline">Популярные товары:</h2>
-        <a class="main-button popular-button" href="#">Все популярные товары</a>
+        <div class="catalog-top">
+          <h2 class="headline">Популярные товары:</h2>
+          <a class="main-button popular-button" href="#">Все популярные товары</a>
+        </div>
         <ul class="catalog-list">
           <li class="catalog-item">
             <div class="action">
@@ -138,16 +140,17 @@
                 В закладки
               </a>
             </div>
-              <a class="catalog-item-link" href="#">
-                <img src="img/bfg-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
-                <h3 class="catalog-item-title">Перфоратор BOSCH BFG 9000</h3>
-              </a>
+            <a class="catalog-item-link" href="#">
+              <img src="img/bfg-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+              <h3 class="catalog-item-title">Перфоратор BOSCH BFG 9000</h3>
+            </a>
             <div class="catalog-item-price">
               <p class="catalog-item-price-old">
-                <b>32500 Р.</b>
+                <s>32500 Р.</s>
               </p>
               <p class="catalog-item-price-current">
-                <b>25500 Р.</b>
+                <img src="img/item-button.svg" width="141" height="38" alt="Актуальная цена">
+                25500 Р.
               </p>
             </div>
           </li>
@@ -167,10 +170,10 @@
             </a>
             <div class="catalog-item-price">
               <p class="catalog-item-price-old">
-                <b>22500 Р.</b>
+                <s>22500 Р.</s>
               </p>
               <p class="catalog-item-price-current">
-                <b>15500 Р.</b>
+                15500 Р.
               </p>
             </div>
           </li>
@@ -184,16 +187,16 @@
                 В закладки
               </a>
             </div>
-              <a class="catalog-item-link" href="#">
-                <img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-                <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
-              </a>
+            <a class="catalog-item-link" href="#">
+              <img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
+            </a>
             <div class="catalog-item-price">
               <p class="catalog-item-price-old">
-                <b>30500 Р.</b>
+                <s>30500 Р.</s>
               </p>
               <p class="catalog-item-price-current">
-                <b>25500 Р.</b>
+                25500 Р.
               </p>
             </div>
           </li>
@@ -207,13 +210,13 @@
                 В закладки
               </a>
             </div>
-              <a class="catalog-item-link" href="#">
-                <img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-                <h3 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h3>
-              </a>
+            <a class="catalog-item-link" href="#">
+              <img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+              <h3 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h3>
+            </a>
             <div class="catalog-item-price">
               <p class="catalog-item-price-current">
-                <b>12500 Р.</b>
+                12500 Р.
               </p>
             </div>
           </li>
@@ -221,8 +224,10 @@
       </section>
 
       <section class="brands">
-        <h2 class="headline">Популярные производители</h2>
-        <a class="main-button brands-button" href="#">Все производители</a>
+        <div class="brands-top">
+          <h2 class="headline">Популярные производители</h2>
+          <a class="main-button brands-button" href="#">Все производители</a>
+        </div>
         <ul class="brands-list">
           <li class="brands-item">
             <a class="brands-link" href="#">

@@ -2,10 +2,9 @@ body {
   margin: 0;
   padding: 0;
   
-  font-family:"Cuprum", "PT Sans", Arial, sens-serif;
+  font-family: "Cuprum", Arial, sens-serif;
   font-size: 13px;
-  line-height: 24px;
-  font-weight: normal;
+  line-height: 1,85;
   color: #000000;
   
   background-color: #ffffff;
@@ -16,15 +15,20 @@ a {
 }
 
 .header-top {
-  font-family: Cuprum;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 1,06;
   color: #ffffff;
   
   background-color: #293449;
 }
 
+.header-button:hover,
+.header-button:focus {
+  background-color: #212a3a;
+}
+
 .make-order-button {
+  color: #ffffff;
   background-color: #63a63e;
 }
 
@@ -39,37 +43,39 @@ a {
 
 .site-title {
   width:196px;
-  height:60px;
-  font-family: Cuprum;
-  font-style: Italic;
+  font-style: italic;
+  font-weight: normal;
   font-size: 16px;
-  line-height: 23px;
+  line-height: 1,44;
   color: #ee3643;
 }
 
 .phone-number {
-  font-family: Cuprum;
   font-size: 21px;
   line-height: 1;
   color: #ee3643;
 }
 
 .adress {
-  font-family: Cuprum;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1,71;
   color: #32425c;
 }
 
-.login-link {
-  font-family: Cuprum;
+.user-navigation a {
   font-size: 21px;
   line-height: 1;
   color: #000000;
+  
+  background-color: #ffffff;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #ee3643;
 }
 
 .main-navigation {
-  font-family: Cuprum;
   font-size: 17px;
   line-height: 1;
   color: #ffffff;
@@ -82,7 +88,8 @@ a {
 .user-list,
 .catalog-list,
 .brands-list,
-.footer-top-navigation {
+.footer-top-navigation,
+.breadcrumbs {
   list-style: none;
 }
 
@@ -91,49 +98,109 @@ a {
   color: #ffffff;
 }
 
-.main-navigation-list a:hover,
-.main-navigation-list a:focus {
+.main-navigation-link:hover,
+.main-navigation-link:focus {
   background-color: #293449;
 }
 
+.overall-catalog-title {
+  font-size: 24px;
+  line-height: 1,25;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.overall-catalog-button {
+  width: 135px;
+  font-size: 14px;
+  line-height: 1,29;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(0,0,0,.1)
+}
+
+.overall-catalog-button:hover,
+.overall-catalog-button:focus {
+  background-color: rgba(0,0,0,.2)
+}
+
+.materials {
+  width: 300px;
+  background-color: #ffbf47;
+}
+
+.instrument {
+  width: 300px;
+  background-color: #3bbce3;
+}
+
+.technic {
+  width: 300px;
+  background-color: #dc91d8;
+}
+
+.discounts {
+  width: 300px;
+  background-color: #8ed78f;
+}
+
+.delivery {
+  width: 300px;
+  background-color: #ffc047;
+}
+
+.catalog-top,
+.brands-top {
+  background-color: #f9f5f0
+}
+
 .headline {
-  font-family: Cuprum;
   font-size: 30px;
-  text-align: left;
   color: #32425c;
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 .catalog-item {
+  width: 220px;
+  
   text-align: center;
   font-weight: bold;
+  border: 1px solid #eaeaea;
 }
 
 .catalog-item-title {
   width:155px;
-  height:33px;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sens-serif;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 1,11;
   color: #000000;
 }
 
 .catalog-item-price-old {
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sens-serif;
   font-size: 17px;
-  line-height: 18px;
-  text-decoration: line-through;
+  line-height: 1,06;
+  
   color: #a9a9a9;
 }
 
 .catalog-item-price-current {
-  
-}             
-  
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.brands-item {
+  width: 220px;
+  height: 145px;
+  border: solid 1px #eaeaea;
+  text-align: center;
+}
+
 .main-button {
   text-align: center;
   vertical-align: middle;
-  font-family: Cuprum;
   font-size: 14px;
   text-transform: uppercase;
   border: none;
@@ -147,10 +214,15 @@ a {
   background-color: #ca2c37;
 }
 
+.popular-button,
+.brands-button {
+  width: 253px;
+  height: 8px;
+}
+
 .footer-top {
- font-family: Cuprum;
  font-size: 18px;
- line-height: 24px;
+ line-height: 1,33;
  color: #f1f5f7;
   
  background-color: #32425c; 
@@ -163,4 +235,9 @@ a {
 .footer-top-navigation a:hover,
 .footer-top-navigation a:focus {
   text-decoration: underline;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
 }
