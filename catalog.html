@@ -96,7 +96,7 @@
       </section>
     </header>
 
-    <main class="container">
+    <main class="inner-page container">
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">
@@ -147,17 +147,15 @@
             </ul>
           </fieldset>
           <fieldset class="filter-group">
-            <legend>Питание</legend>
+            <legend>Питание:</legend>
             <ul class=power-supply-list>
               <li class="power-supply-item">
-                <label>
-                  <input class="filter-click" type="radio" name="power-supply" value="Аккумуляторные" checked>Аккумуляторные
-                </label>
+                <input class="filter-click" type="radio" name="power-supply" value="Аккумуляторные" id="accumulator" checked>
+                <label class="filter-radio" for="accumulator">Аккумуляторные</label>
               </li>
               <li class="power-supply-item">
-                <label>
-                  <input class="filter-click" type="radio" name="power-supply" value="Сетевые">Сетевые
-                </label>
+                <input class="filter-click" type="radio" name="power-supply" value="Сетевые" id="electronetwork">
+                <label class="filter-radio" for="electronetwork">Сетевые</label>
               </li>
             </ul>
           </fieldset>
@@ -491,10 +489,11 @@
 
     <section class="modal modal-message">
       <h3 class="visually-hidden">Сообщение</h3>
-      <p class="message-text">Товар добавлен в корзину</p>
+      <img src="img/modal-check.svg" width="66" height="66" alt="Большая галка">
+      <p class="message-text">Товар добавлен в корзину!</p>
       <div class="message-choice">
-          <a class="button message-button" href="#">Оформить заказ</a>
-          <button class="button message-button">Продолжить покупки</button>
+          <a class="button message-button-order" href="#">Оформить заказ</a>
+          <button class="button message-button-continue">Продолжить покупки</button>
       </div>      
       <button class="modal-close" type="button">Закрыть</button>
     </section>
