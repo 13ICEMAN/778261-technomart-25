@@ -47,8 +47,6 @@ body {
   font-family: "Cuprum", "Arial", sens-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 13px;
-  line-height: 1.85;
   color: #000000;
   background-color: #ffffff;
 }
@@ -57,15 +55,39 @@ a {
   text-decoration: none;
 }
 
+.main-header {
+  width: 100%;
+  background-color: #f4f7f9;
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+}
+
 .header-top {
+  width: 100%;
   font-size: 17px;
   line-height: 1.06;
   color: #ffffff;
   background-color: #293449;
+  display: flex;
 }
 
 .header-top a {
   color: #ffffff;
+}
+
+.main-header-logo {
+  width: 220px;
+  height: 42px;
+  background-color: #ee3643;
+}
+
+.search {
+  width: 270px;
+}
+
+.user-list {
+  width: 450px;
+  list-style: none;
 }
 
 .header-button:hover,
@@ -74,6 +96,7 @@ a {
 }
 
 .make-order-button {
+  width; 150px;
   color: #ffffff;
   background-color: #63a63e;
 }
@@ -84,7 +107,7 @@ a {
 }
 
 .header-middle {
-  background-color: #f4f7f9;
+  display: flex;
 }
 
 .site-title {
@@ -94,6 +117,11 @@ a {
   font-size: 16px;
   line-height: 1.44;
   color: #ee3643;
+  margin: 45px 71px 40px 53px;
+}
+
+.phone-link {
+  border: 3px solid #ffffff;
 }
 
 .phone-number {
@@ -125,13 +153,17 @@ a {
   line-height: 1;
   color: #ffffff; 
   background-color: #32425c;
+  
+}
+
+.main-navigation-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .user-navigation,
-.main-navigation-list,
-.user-list,
-.catalog-list,
-.brands-list,
 .footer-top-navigation {
   list-style: none;
 }
@@ -143,6 +175,10 @@ a {
 .main-navigation-link:hover,
 .main-navigation-link:focus {
   background-color: #293449;
+}
+
+.overall-catalog {
+  margin-bottom: 53px;
 }
 
 .overall-catalog-title {
@@ -159,12 +195,12 @@ a {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: rgba(0,0,0,0.1)
+  background-color: rgba(0, 0, 0, 0.1)
 }
 
 .overall-catalog-button:hover,
 .overall-catalog-button:focus {
-  background-color: rgba(0,0,0,0.2)
+  background-color: rgba(0, 0, 0, 0.2)
 }
 
 .materials {
@@ -192,9 +228,14 @@ a {
   background-color: #ffc047;
 }
 
-.catalog-top,
+.catalog-top {
+  background-color: #f9f5f0;
+  margin-bottom: 20px;
+}
+
 .brands-top {
-  background-color: #f9f5f0
+  background-color: #f9f5f0;
+  margin-bottom: 20px;
 }
 
 .headline {
@@ -202,6 +243,14 @@ a {
   color: #32425c;
   text-transform: uppercase;
   font-weight: normal;
+}
+
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 21px;
+  padding: 0;
 }
 
 .catalog-item {
@@ -212,7 +261,7 @@ a {
 }
 
 .catalog-item:hover {
-  box-shadow: 0px 10px 25px 0 rgba(41,52,73,0.5);
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .button-buy {
@@ -259,16 +308,28 @@ a {
 }
 
 .catalog-item-price-current {
+  font-family: "PT Sans";
+  font-size: 17px;
+  line-height: 1.06;
   color: #ffffff;
   background-color: #ee3643;
+}
+
+.brands-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 85px;
+  padding: 0;
 }
 
 .brands-item {
   width: 220px;
   height: 145px;
   border: solid 1px #eaeaea;
-  text-align: center;
 }
+
 
 .main-button {
   text-align: center;
@@ -289,16 +350,53 @@ a {
   width: 253px;
 }
 
+.service {
+  background-color: #f4f7f9;
+  margin-bottom: 80px;
+}
+
 .transport-item {
   font-size: 18px;
   line-height: 1.11;
 }
 
+.main-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company {
+  width: 519px;
+}
+
+.contacts {
+  width: 300px;
+}
+
+.service-text,
+.company-text,
+.contacts-text  {
+  font-family: "PT Sans", "Arial", sens-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.contacts-text {
+  width: 179px;
+}
+
+.main-footer {
+  width: 100%;
+  background-color: #32425c;
+  margin-top: 86px;
+}
+
 .footer-top {
   font-size: 18px;
   line-height: 1.33;
-  color: #f1f5f7;
-  background-color: #32425c; 
+  color: #f1f5f7; 
 }
 
 .footer-top-navigation-link {
@@ -419,7 +517,7 @@ a {
   text-transform: uppercase;
 }
 
-.filter legend {
+.filter-parameter {
   font-size: 17px;
   line-height: 1.76;
   font-weight: bold;
@@ -434,9 +532,9 @@ a {
   text-transform: uppercase;
 }
 
-.filter-brand:disabled + label,
-.filter-click:disabled + label {
-  color: rgba(0,0,0,0.4)
+.filter-brand:disabled + .filter-checkbox,
+.filter-click:disabled + .filter-radio {
+  color: rgba(0, 0, 0, 0.4)
 }
 
 .filter-button {
@@ -494,8 +592,8 @@ a {
 
 .modal {
   color: #000000;
-  background-color: rgba(0,0,0,0.75)
-  box-shadow: 0px 20px 40px 0 rgba(0,0,0,0.75);
+  background-color: #ffffff;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
 .feedback-desc {
@@ -507,7 +605,7 @@ a {
 .feedback-text {
   font-family: "PT Sans";
   font-size: 13px;
-  line-height: 1,38;
+  line-height: 1.38;
   color: #a9a9a9;
   border: 2px solid #dee3e4;
 }
@@ -515,7 +613,7 @@ a {
 .feedback-button {
   font-family: "Cuprum";
   font-size: 14px;
-  line-height: 1,29;
+  line-height: 1.29;
   text-transform: uppercase;
   border: none;
   color: #ffffff;
@@ -531,7 +629,7 @@ a {
 .message-button-order {
   font-family: "Cuprum";
   font-size: 14px;
-  line-height: 1,29;
+  line-height: 1.29;
   text-transform: uppercase;
   border: none;
   color: #ffffff;
@@ -541,7 +639,7 @@ a {
 .message-button-continue {
   font-family: "Cuprum";
   font-size: 14px;
-  line-height: 1,29;
+  line-height: 1.29;
   text-transform: uppercase;
   border: none;
   color: #000000;
