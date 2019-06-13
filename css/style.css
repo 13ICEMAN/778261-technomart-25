@@ -635,10 +635,12 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer-logo {
-  padding: 20px 41px 25px 41px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
-  margin-right: 173px;
+  padding-top: 20px;
+  padding-right: 41px;
+  padding-bottom: 20px;
+  padding-left: 41px;
 }
 
 
@@ -648,14 +650,15 @@ input[type="radio"].visually-hidden {
   justify-content: flex-end;
   list-style: none;
   margin: 0;
-  margin-top: 42px;
+  margin-top: 38px;
+  margin-left: 113px;
   padding: 0;
   
 }
 
 .footer-top-navigation-link {
   color: #f1f5f7;
-  padding-left: 60px;
+  padding-left: 59px;
 }
 
 .footer-top-navigation-link:hover,
@@ -668,16 +671,28 @@ input[type="radio"].visually-hidden {
   line-height: 1.33;
   color: #f1f5f7; 
   background-color: #32425c;
+  display: flex;
+}
+
+.footer-contacts {
+  margin-top: 27px;
+  margin-left: 4px;
+  margin-bottom: 51px;
 }
 
 .footer-middle-navigation {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
+  margin-top: 27px;
+  margin-left: 33px;
   padding: 0;
 }
 
 .footer-middle-navigation-link {
   color: #ffd180;
+  padding-left: 59px;
 }
 
 .footer-middle-navigation-link:hover,
@@ -690,36 +705,57 @@ input[type="radio"].visually-hidden {
   line-height: 1.13;
   color: #ffffff;
   background-color: #293449;
-  padding: 35px 0 30px 0;
 }
 
 .footer-bottom .container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-copyright {
   width: 228px;
-  margin-right: 161px;
+  margin-top: 37px;
+  margin-right: 160px;
+  margin-left: 2px;
 }
 
 .social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 132px;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 35px;
   margin-right: 119px;
-  
+  margin-bottom: 30px;
 }
 
 .social-button {
-  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: #212a3a;
+  border-radius: 50%;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #ee3643;
 }
 
 .footer-info-feedback {
   width: 135px;
+  margin-top: 37px;
   margin-right: 53px;
 }
 
 .footer-info-developed {
   width: 96px;
+  margin-top: 37px;
   margin-right: 15px;
 }
 
