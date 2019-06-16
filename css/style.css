@@ -387,6 +387,135 @@ input[type="radio"].visually-hidden {
   background-color: #ffc047;
 }
 
+.main-button {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: none;
+  color:#ffffff;
+  background-color: #ee3643;
+  border-radius: 2px;
+  border: none;
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+
+.main-button:hover,
+.main-button:focus {
+  background-color: #ca2c37;
+}
+
+.main-button:active {
+  background-color: #ba2732;
+}
+
+
+
+
+.slider {
+  width: 620px;
+  position: relative;
+  background-color: #464646;
+}
+
+.slider-controls {
+  position: absolute;
+  left: 293px;
+  bottom: 29px;
+  z-index: 100;
+}
+
+.slider-controls label {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;  
+  list-style: none;
+}
+
+.slider-item {
+  display: none;
+  padding-top: 23px;
+  padding-bottom: 22px;
+  padding-left: 25px;
+}
+
+.slider-item:nth-child(1) {
+  background-image: url("../img/slide-drill.jpg");
+  background-repeat: no-repeat;
+}
+
+.slider-item:nth-child(2) {
+  background-image: url("../img/slide-perf.jpg");
+  background-repeat: no-repeat;
+}
+
+#drill:checked ~ .slider-list .slider-item:nth-child(1) {
+  display: block;
+}
+
+#perf:checked ~ .slider-list .slider-item:nth-child(2) {
+  display: block;
+}
+
+#drill:checked ~ .slider-controls .slider-controls-item--1::before,
+#perf:checked ~ .slider-controls .slider-controls-item--2::before {
+  content: "";  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2; 
+  width: 6px;
+  height: 6px;
+  margin: -3px;
+  background-color: #ee3643;
+  border-radius: 50%;
+}
+
+.slider-title {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 2px;
+  margin-left: -1px;
+}
+
+.slider-text {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 122px;
+}
+
+.slider-button {
+  width: 195px;
+}
+
 .catalog-top {
   background-color: #f9f5f0;
   margin-bottom: 20px;
@@ -560,21 +689,6 @@ input[type="radio"].visually-hidden {
   height: 145px;
   border: solid 1px #eaeaea;
   margin-bottom: 20px;
-}
-
-
-.main-button {
-  text-align: center;
-  font-size: 14px;
-  text-transform: uppercase;
-  border: none;
-  color:#ffffff;
-  background-color: #ee3643;
-}
-
-.main-button:hover,
-.main-button:focus {
-  background-color: #ca2c37;
 }
 
 .popular-button,
