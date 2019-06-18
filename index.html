@@ -92,58 +92,51 @@
     </header>
 
     <main class="container">
-
-      <div class="overall-catalog">
-        <div class="materials">
-          <span class="overall-catalog-title">Материалы</span>
-          <a class="overall-catalog-button" href="#">На любой вкус</a>
-          <img src="img/icon-materials.svg" width="44" height="65" alt="Материалы">
+      <div class="overall-catalog-columns">
+        <div class="overall-catalog-left">
+          <div class="overall-catalog-item materials">
+            <span class="overall-catalog-title">Материалы</span>
+            <a class="overall-catalog-button" href="#">На любой вкус</a>
+          </div>
+          <div class="overall-catalog-item instrument">
+            <span class="overall-catalog-title">Инструмент</span>
+            <a class="overall-catalog-button" href="#">На все случаи</a>
+          </div>
+          <section class="slider">
+            <h2 class="visually-hidden">Инструменты</h2>
+            <input class="visually-hidden" type="radio" id="drill" name="toggle" checked>
+            <input class="visually-hidden" type="radio" id="perf" name="toggle">
+            <div class="slider-controls">
+              <label class="slider-controls-item slider-controls-item--1" for="drill"></label>
+              <label class="slider-controls-item slider-controls-item--2" for="perf"></label>
+            </div>
+            <ul class="slider-list">
+              <li class="slider-item">
+                <p class="slider-title">Дрели</p>
+                <p class="slider-text">Соседям на радость!</p>
+                <a class="main-button slider-button" href="#">Открыть каталог</a>
+              </li>
+              <li class="slider-item">
+                <p class="slider-title">Перфораторы</p>
+                <p class="slider-text">Настоящие мужские игрушки</p>
+                <a class="main-button slider-button" href="catalog.html">Открыть каталог</a>
+              </li>
+            </ul>  
+          </section>
         </div>
-        <div class="instrument">
-          <span class="overall-catalog-title">Инструмент</span>
-          <a class="overall-catalog-button" href="#">На все случаи</a>
-          <img src="img/icon-instrument.svg" width="75" height="61" alt="Инструмент">
-        </div>
-      </div>
-
-      <section class="slider">
-        <h2 class="visually-hidden">Инструменты</h2>
-        <input class="visually-hidden" type="radio" id="drill" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="perf" name="toggle">
-        <div class="slider-controls">
-          <label class="slider-controls-item slider-controls-item--1" for="drill"></label>
-          <label class="slider-controls-item slider-controls-item--2" for="perf"></label>
-        </div>
-        <ul class="slider-list">
-          <li class="slider-item">
-            <p class="slider-title">Дрели</p>
-            <p class="slider-text">Соседям на радость!</p>
-            <a class="main-button slider-button" href="#">Открыть каталог</a>
-          </li>
-          <li class="slider-item">
-            <p class="slider-title">Перфораторы</p>
-            <p class="slider-text">Настоящие мужские игрушки</p>
-            <a class="main-button slider-button" href="catalog.html">Открыть каталог</a>
-          </li>
-        </ul>  
-      </section>
-
-
-      <div class="overall-catalog">
-        <div class="technic">
-          <span class="overall-catalog-title">Техника</span>
-          <a class="overall-catalog-button" href="#">Для стройки</a>
-          <img src="img/icon-technic.svg" width="78" height="62" alt="Техника">
-        </div>
-        <div class="discounts">
-          <span class="overall-catalog-title">Скидки 50%</span>
-          <a class="overall-catalog-button" href="#">На 350 товаров</a>
-          <img src="img/icon-discounts.svg" width="59" height="72" alt="Скидки 50%">
-        </div>
-        <div class="delivery">
-          <span class="overall-catalog-title">Доставка</span>
-          <a class="overall-catalog-button" href="#">Бесплатно</a>
-          <img src="img/icon-delivery.svg" width="78" height="63" alt="Доставка">
+        <div class="overall-catalog-right">
+          <div class="overall-catalog-item technic">
+            <span class="overall-catalog-title">Техника</span>
+            <a class="overall-catalog-button" href="#">Для стройки</a>
+          </div>
+          <div class="overall-catalog-item discounts">
+            <span class="overall-catalog-title">Скидки 50%</span>
+            <a class="overall-catalog-button" href="#">На 350 товаров</a>
+          </div>
+          <div class="overall-catalog-item delivery">
+            <span class="overall-catalog-title">Доставка</span>
+            <a class="overall-catalog-button" href="#">Бесплатно</a>
+          </div>
         </div>
       </div>
 
@@ -256,42 +249,42 @@
           <a class="main-button brands-button" href="#">Все производители</a>
         </div>
         <ul class="brands-list">
-          <li class="brands-item">
+          <li class="brands-item bosch">
             <a class="brands-link" href="#">
               <img src="img/bosch.png" width="126" height="37" alt="Логотип Bosch">
             </a>
           </li>
-          <li class="brands-item">
+          <li class="brands-item makita">
             <a class="brands-link" href="#">
               <img src="img/makita.png" width="123" height="40" alt="Логотип Makita">
             </a>
           </li>
-          <li class="brands-item">
+          <li class="brands-item dewalt">
             <a class="brands-link" href="#">
               <img src="img/de-walt.png" width="146" height="44" alt="Логотип DeWalt">
             </a>
           </li>
-          <li class="brands-item">
+          <li class="brands-item interskol">
             <a class="brands-link" href="#">
               <img src="img/interskol.png" width="200" height="88" alt="Логотип Интерскол">
             </a>
           </li>
-          <li class="brands-item">
+          <li class="brands-item hitachi">
             <a class="brands-link" href="#">
               <img src="img/hitachi.png" width="169" height="31" alt="Логотип Hitachi">
             </a>
           </li>
-          <li class="brands-item">
+          <li class="brands-item lg">
             <a class="brands-link" href="#">
               <img src="img/lg.png" width="121" height="73" alt="Логотип LG">
             </a>
           </li>
-          <li class="brands-item">
+          <li class="brands-item aeg">
             <a class="brands-link" href="#">
               <img src="img/aeg.png" width="151" height="96" alt="Логотип AEG">
             </a>
           </li>
-          <li class="brands-item">
+          <li class="brands-item metabo">
             <a class="brands-link" href="#">
               <img src="img/metabo.png" width="204" height="69" alt="Логотип Metabo">
             </a>

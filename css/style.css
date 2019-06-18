@@ -335,9 +335,33 @@ input[type="radio"].visually-hidden {
   background-color: #293449;
 }
 
-.overall-catalog {
+.overall-catalog-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
   margin-top: 60px;
   margin-bottom: 53px;
+}
+
+.overall-catalog-left {
+  width: 620px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.overall-catalog-item {
+  position: relative;
+  width: 277px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 21px;
+  padding-left: 23px;
 }
 
 .overall-catalog-title {
@@ -348,43 +372,106 @@ input[type="radio"].visually-hidden {
 }
 
 .overall-catalog-button {
+  display: block;
   width: 135px;
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.1)
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  border: none;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  margin-top: 11px;
+  margin-left: 3px;
+  margin-bottom: 21px;
 }
 
 .overall-catalog-button:hover,
 .overall-catalog-button:focus {
-  background-color: rgba(0, 0, 0, 0.2)
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.materials {
-  width: 300px;
+.materials {  
   background-color: #ffbf47;
 }
 
+.materials::after {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: 213px;
+  width: 44px;
+  height: 65px;
+  background-image: url("../img/icon-materials.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .instrument {
-  width: 300px;
   background-color: #3bbce3;
 }
 
+.instrument::after {
+  content: "";
+  position: absolute;
+  top: 33px;
+  left: 197px;
+  width: 75px;
+  height: 61px;
+  background-image: url("../img/icon-instrument.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .technic {
-  width: 300px;
   background-color: #dc91d8;
 }
 
+.technic::after {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: 191px;
+  width: 78px;
+  height: 62px;
+  background-image: url("../img/icon-technic.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .discounts {
-  width: 300px;
   background-color: #8ed78f;
 }
 
+.discounts::after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 196px;
+  width: 59px;
+  height: 72px;
+  background-image: url("../img/icon-discounts.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .delivery {
-  width: 300px;
   background-color: #ffc047;
+}
+
+.delivery::after {
+  content: "";
+  position: absolute;
+  top: 32px;
+  left: 191px;
+  width: 78px;
+  height: 63px;
+  background-image: url("../img/icon-delivery.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .main-button {
@@ -410,11 +497,9 @@ input[type="radio"].visually-hidden {
   background-color: #ba2732;
 }
 
-
-
-
 .slider {
   width: 620px;
+  min-height: 266px;
   position: relative;
   background-color: #464646;
 }
@@ -517,11 +602,21 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #f9f5f0;
+  padding: 0;
+  margin: 0;
+  padding-right: 24px;
+  padding-left: 30px;
   margin-bottom: 20px;
 }
 
 .brands-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #f9f5f0;
   margin-bottom: 20px;
 }
@@ -685,10 +780,40 @@ input[type="radio"].visually-hidden {
 }
 
 .brands-item {
-  width: 220px;
-  height: 145px;
   border: solid 1px #eaeaea;
   margin-bottom: 20px;
+}
+
+.bosch {
+  padding: 52px 46px 49px 46px;
+}
+
+.makita {
+  padding: px px px px;
+}
+
+.dewalt {
+  padding: px px px px;
+}
+
+.interskol {
+  padding: px px px px;
+}
+
+.hitachi {
+  padding: px px px px;
+}
+
+.lg {
+  padding: px px px px;
+}
+
+.aeg {
+  padding: px px px px;
+}
+
+.metabo {
+  padding: px px px px;
 }
 
 .popular-button,
