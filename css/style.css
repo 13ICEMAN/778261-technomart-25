@@ -362,6 +362,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 20px;
   padding-top: 21px;
   padding-left: 23px;
+  padding-bottom: 21px;
 }
 
 .overall-catalog-title {
@@ -384,9 +385,9 @@ input[type="radio"].visually-hidden {
   border: none;
   padding-top: 12px;
   padding-bottom: 10px;
-  margin-top: 11px;
+  /*margin-top: 11px;*/
   margin-left: 3px;
-  margin-bottom: 21px;
+  /*margin-bottom: 21px;*/
 }
 
 .overall-catalog-button:hover,
@@ -608,9 +609,11 @@ input[type="radio"].visually-hidden {
   background-color: #f9f5f0;
   padding: 0;
   margin: 0;
+  padding-top: 5px;
   padding-right: 24px;
-  padding-left: 30px;
-  margin-bottom: 20px;
+  padding-bottom: 5px;
+  padding-left: 29px;
+  margin-bottom: 19px;
 }
 
 .brands-top {
@@ -618,11 +621,18 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: center;
   background-color: #f9f5f0;
-  margin-bottom: 20px;
+  padding: 0;
+  margin: 0;
+  padding-top: 5px;
+  padding-right: 24px;
+  padding-bottom: 5px;
+  padding-left: 29px;
+  margin-bottom: 19px;
 }
 
 .headline {
   font-size: 30px;
+  line-height: 1;
   color: #32425c;
   text-transform: uppercase;
   font-weight: normal;
@@ -632,16 +642,16 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  margin-bottom: 21px;
   padding: 0;
+  margin: 0;
+  margin-bottom: 21px;
   font-size: 0;
 }
 
 .catalog-item {
   position: relative;
   display: inline-block;
-  width: 220px;
-  font-size: 16px;
+  width: 218px;
   text-align: center;
   font-weight: bold;
   border: 1px solid #eaeaea;
@@ -693,16 +703,13 @@ input[type="radio"].visually-hidden {
   border: 3px solid #32425c;
 }
 
-
 .catalog-item-title {
   font-family: "PT Sans";
   font-size: 18px;
   line-height: 1.11;
   color: #000000;
   padding: 0 25px;
-  margin-top: 10px;
-  margin-bottom: 15px;
-
+  margin-top: 9px;
 }
 
 .catalog-item-price-old {
@@ -710,7 +717,6 @@ input[type="radio"].visually-hidden {
   font-size: 17px;
   line-height: 1.06;
   color: #a9a9a9;
-  margin-top: 15px;
   margin-bottom: 10px;
 }
 
@@ -775,8 +781,10 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
-  margin-bottom: 85px;
   padding: 0;
+  margin: 0;
+  margin-bottom: 85px;
+  
 }
 
 .brands-item {
@@ -784,36 +792,48 @@ input[type="radio"].visually-hidden {
   margin-bottom: 20px;
 }
 
+/*
+Правильно было бы сделать так:
+.brands-item {
+  display: flex;
+  width: 218px;
+  height: 143px;
+  justify-content: center;
+  align-items: center;
+}
+но получится много отличий от макета, поэтому пришлось задать отступы для каждого элемента
+*/
+
 .bosch {
   padding: 52px 46px 49px 46px;
 }
 
 .makita {
-  padding: px px px px;
+  padding: 49px 48px 49px 47px;
 }
 
 .dewalt {
-  padding: px px px px;
+  padding: 47px 36px 47px 36px;
 }
 
 .interskol {
-  padding: px px px px;
+  padding: 20px 10px 30px 8px;
 }
 
 .hitachi {
-  padding: px px px px;
+  padding: 57px 22px 50px 27px;
 }
 
 .lg {
-  padding: px px px px;
+  padding: 34px 50px 31px 47px;
 }
 
 .aeg {
-  padding: px px px px;
+  padding: 22px 33px 20px 34px;
 }
 
 .metabo {
-  padding: px px px px;
+  padding: 33px 5px 36px 9px;
 }
 
 .popular-button,
@@ -1212,6 +1232,9 @@ display: none;
 
 .filter-group {
   border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .filters-title,
@@ -1245,6 +1268,7 @@ display: none;
   line-height: 1.76;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 14px;
 }
 
 .filter-list,
@@ -1253,11 +1277,29 @@ display: none;
   font-size: 15px;
   line-height: 1.33;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
 
 .filter-brand:disabled + .filter-checkbox,
 .filter-click:disabled + .filter-radio {
   color: rgba(0, 0, 0, 0.4)
+}
+
+.filter-item,
+.power-supply-item {
+  margin-bottom: 21px;
+  padding-left: 17px;
+}
+
+.filter-item label
+.power-supply-item label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
 }
 
 .filter-button {
@@ -1325,12 +1367,34 @@ display: none;
   padding: 0 10px;
 }
 
-.modal {
+/*.modal {
+  position: fixed;
   color: #000000;
   background-color: #ffffff;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 6px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  background-color: red;
+  border: 0;
+  cursor: pointer;
+}
+
+
+.modal-feedback {
+  top: 200px;
+  left: 50%;
+  width: 460px;
+  margin-left: -310px;
+  padding: 48px 80px 37px 80px;
+}
+ 
 .feedback-desc {
   font-family: "Cuprum";
   font-size: 18px;
@@ -1379,4 +1443,4 @@ display: none;
   border: none;
   color: #000000;
   background-color: #ffffff;
-}
+}*/
